@@ -1,0 +1,44 @@
+.modal {
+  position: fixed;
+  inset: 0; /* inset sets all 4 values (top right bottom left) much like how we set padding, margin etc., */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 999;
+  padding: 40px 20px 20px;
+}
+
+.modal-content {
+  width: 70%;
+  height: 70%;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 20px;
+}
+.modal-content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.modal-content > div > div > span {
+  font-weight: bold;
+}
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn > button {
+  cursor: pointer;
+  padding: 6px;
+}

@@ -1,0 +1,22 @@
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-container button {
+  cursor: pointer;
+}
+.page-no {
+  border: 1px solid black;
+  padding: 4px;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 4px;
+  background-color: #d6eeee;
+}
+.page-selected {
+  border: 1px solid black;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #43dede;
+}
